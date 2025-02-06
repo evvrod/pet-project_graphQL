@@ -1,0 +1,12 @@
+/node_modules
+/.husky
+/dist
+.eslintrc.cjs
+.prettierrc
+.prettierignore
+vitest.config.ts
+*.test.ts
+tests/coverage
+package-lock.json
+package.json
+tsconfig.json
