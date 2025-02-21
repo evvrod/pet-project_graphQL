@@ -1,0 +1,20 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.title {
+  font: var(--text-bold-l);
+  color: var(--color-secondary);
+  align-self: center;
+}
+
+@media (width<800px) {
+  .column {
+    width: 100%;
+  }
+}
