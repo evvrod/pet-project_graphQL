@@ -1,0 +1,16 @@
+.button {
+  width: 30px;
+  padding: 3px 3px 0px 3px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-tertiary);
+  color: var(--color-base);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--color-secondary);
+}
+.button:disabled {
+  background-color: var(--color-neutral);
+  cursor: not-allowed;
+}

@@ -1,0 +1,26 @@
+.navigation-list {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.button {
+  font: var(--text-s);
+  background-color: transparent;
+  border: none;
+  color: var(--color-tertiary);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+  }
+}
+
+.active {
+  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
+}

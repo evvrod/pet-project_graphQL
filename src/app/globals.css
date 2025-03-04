@@ -1,0 +1,48 @@
+:root {
+  --color-primary: #ff5794;
+  --color-secondary: #908aff;
+  --color-tertiary: #00c2e0;
+  --color-info: #70bcff;
+  --color-success: #00d688;
+  --color-warning: #ffcc99;
+  --color-error: #ff5729;
+  --color-neutral: #b7c2d7;
+  --color-base: #212a3b;
+
+  /* text */
+  --text-xs: 14px /1 var(--font-rubik), sans-serif;
+  --text-s: 16px /1 var(--font-rubik), sans-serif;
+  --text-m: 18px /1 var(--font-rubik), sans-serif;
+  --text-l: 24px /1 var(--font-rubik), sans-serif;
+  --text-xl: 36px /1 var(--font-rubik), sans-serif;
+
+  /* text bold */
+  --text-bold-xs: bold 14px /1 var(--font-rubik), sans-serif;
+  --text-bold-s: bold 16px /1 var(--font-rubik), sans-serif;
+  --text-bold-m: bold 18px /1 var(--font-rubik), sans-serif;
+  --text-bold-l: bold 24px /1 var(--font-rubik), sans-serif;
+  --text-bold-xl: bold 32px /1 var(--font-rubik), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-rubik);
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: var(--color-neutral);
+  background-color: var(--color-base);
+  height: 100vh;
+}
+
+.monaco-editor {
+  position: absolute !important;
+}

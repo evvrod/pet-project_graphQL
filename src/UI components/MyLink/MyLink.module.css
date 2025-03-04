@@ -1,0 +1,10 @@
+.my-link {
+  color: var(--color-tertiary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.my-link:hover {
+  text-decoration: underline;
+}

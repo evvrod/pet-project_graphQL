@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- GraphQL Symbol -->
+  <g fill="none" stroke="rgb(0, 194, 224)" stroke-width="8">
+    <!-- Outer Layer (Hexagonal Structure) -->
+    <path d="M125 30 L185 50 L185 150 L125 170 L65 150 L65 50 Z" />
+    <!-- Inner Diagonal Lines -->
+    <path d="M125 30 L125 170" />
+    <path d="M185 50 L65 150" />
+    <path d="M185 150 L65 50" />
+  </g>
+
+  <!-- Inner GraphQL Nodes -->
+  <circle cx="125" cy="100" r="8" fill="rgb(0, 194, 224)" />
+  <circle cx="75" cy="75" r="8" fill="rgb(0, 194, 224)" />
+  <circle cx="175" cy="75" r="8" fill="rgb(0, 194, 224)" />
+  <circle cx="75" cy="125" r="8" fill="rgb(0, 194, 224)" />
+  <circle cx="175" cy="125" r="8" fill="rgb(0, 194, 224)" />
+
+  <!-- Connecting Lines -->
+  <g stroke="rgb(0, 194, 224)" stroke-width="4">
+    <path d="M125 100 L75 75" />
+    <path d="M125 100 L175 75" />
+    <path d="M125 100 L75 125" />
+    <path d="M125 100 L175 125" />
+  </g>
+
+  <!-- "Client" Text -->
+  <text x="210" y="170" font-family="'Rubik', sans-serif" font-size="80" text-anchor="start" fill="rgb(0, 194, 224)" font-weight="bold" alignment-baseline="middle">Client</text>
+</svg>

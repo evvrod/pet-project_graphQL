@@ -1,0 +1,69 @@
+.content {
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 40vmax;
+  color: var(--color-neutral);
+  opacity: 20%;
+  letter-spacing: 0.025em;
+  margin: 0;
+  transition: 750ms ease-in-out;
+}
+
+.description {
+  color: var(--color-neutral);
+  font-size: calc(1em + 3vmin);
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  margin: 0;
+  text-align: right;
+  text-shadow:
+    -1px -1px 0 var(--color-base),
+    1px 1px 0 var(--color-base),
+    -1px 1px 0 var(--color-base),
+    1px -1px 0 var(--color-base);
+}
+
+.wrapper:has(a:hover) + .background-wrapper > .title,
+.wrapper:has(button:hover) + .background-wrapper > .title {
+  color: var(--color-tertiary);
+  opacity: 100%;
+}
+
+@media screen and (min-width: 340px) {
+  .description {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .description {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 940px) {
+  .description {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .description {
+    width: 25%;
+  }
+}

@@ -1,0 +1,18 @@
+.response {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.wrapperTextarea {
+  height: 100%;
+}
+
+.response:has(.error) textarea {
+  color: var(--color-error);
+}
+
+.textarea {
+  height: 100%;
+}

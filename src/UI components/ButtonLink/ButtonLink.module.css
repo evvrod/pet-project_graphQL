@@ -1,0 +1,13 @@
+.link {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-tertiary);
+  color: var(--color-base);
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.link:hover {
+  background-color: var(--color-secondary);
+}
