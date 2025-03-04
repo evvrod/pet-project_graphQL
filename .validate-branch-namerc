@@ -1,0 +1,4 @@
+{
+  "pattern": "^(fix|feat|refactor|chore)/[a-zA-Z0-9_]+$",
+  "errorMsg": "Branch name must follow the format: <type>: <description>"
+}

@@ -1,0 +1,99 @@
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: var(--color-base);
+  border: 1px solid var(--color-neutral);
+}
+
+.header {
+  display: contents;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cell:not(:last-child) {
+  border-right: 1px solid var(--color-neutral);
+}
+
+.row:not(:last-child) .cell {
+  border-bottom: 1px solid var(--color-neutral);
+}
+
+.header .cell {
+  padding: 6px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-neutral);
+}
+
+.row .cell:not(:has(input)) {
+  padding: 6px;
+  color: var(--color-success);
+}
+
+.row .cell:not(:has(input))::after {
+  content: 'Обязательное значение';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-base);
+  color: var(--color-success);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font: var(--text-xs);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.row .cell:not(:has(input)):hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cell button {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.cell button:hover {
+  background-color: var(--color-secondary);
+}
+
+.row:last-child button {
+  display: none;
+}
+
+.row:not(:hover) button {
+  display: none;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: var(--color-base);
+  color: var(--color-neutral);
+  padding: 6px;
+}
+
+.input:focus:not(:read-only) {
+  background-color: white;
+  color: black;
+  outline: 1px solid var(--color-tertiary);
+  border-radius: 5px;
+}
+
+.input.error {
+  outline: 1px solid var(--color-error);
+}
