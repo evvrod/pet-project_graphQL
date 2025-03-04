@@ -40,7 +40,7 @@
 }
 
 .row .cell:not(:has(input))::after {
-  content: 'Обязательное значение';
+  content: 'Mandatory value';
   position: absolute;
   bottom: 100%;
   left: 50%;
